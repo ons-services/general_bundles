@@ -1,0 +1,60 @@
+MIT License
+
+Copyright (c) 2025 onsservices
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+/*!
+ * ONS General Modules Bundle
+ * -----------------------------------------
+ * Description:
+ *    This JavaScript bundle is generated via Webpack and combines all
+ *    common front‑end modules used across the ONS Dashboard. It includes:
+ *
+ *      • Device restriction handling for responsive security/UI lockouts
+ *      • Dynamic Bootstrap modal loader:
+ *          - Fetches modal HTML fragments from the server via AJAX
+ *          - Injects them into #dynamic-modal-container
+ *          - Displays them using Bootstrap’s Modal API
+ *      • Idle time detection with configurable inactivity warning & auto‑logout
+ *      • Profile tabs heading management
+ *      • Sidebar toggle & layout adjustment logic
+ *      • Scroll‑to‑top visibility & animation
+ *      • Theme toggler (light/dark/custom theme support)
+ *      • Password visibility toggler
+ *
+ * Global API:
+ *    All key initializers and utilities are exposed via the global:
+ *
+ *        window.GeneralAPI = {
+ *            initDeviceRestriction,
+ *            loadAndShowModal,
+ *            initGModalLoader,
+ *            initIdleTimeCounter,
+ *            initPasswordToggler,
+ *            initProfileTabs,
+ *            initScrollToTop,
+ *            initThemeToggler,
+ *            initSidebar
+ *        };
+ *
+ * Build Info:
+ *    - Compiled & minified by Webpack from multiple ES module sources
+ *    - Designed for inclusion as a single <script> on the dashboard and
+ *      accessible both inline (onclick) and via JS.
+ *
+ * Usage:
+ *    HTML trigger example:
+ *        <button onclick="GeneralAPI.loadAndShowModal('break_timer_modal')">
+ *            Open Break Timer
+ *        </button>
+ *
+ * License: MIT (https://onsservices.in/blob/general_license/LICENSE)
+ * Author: SkyWalker (https://github.com/ons-services/about/skywalker)
+ * Homepage: https://getassets.onsservices.in/
+ */
